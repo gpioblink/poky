@@ -1,0 +1,1838 @@
+58 00:17:18.865712 --- Starting bitbake server pid 58 at 2024-06-03 00:17:18.865703 ---
+58 00:17:18.866044 Started bitbake server pid 58
+58 00:17:18.866133 Entering server connection loop
+58 00:17:18.866141 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+58 00:17:18.866362 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+58 00:17:18.866793 Processing Client
+58 00:17:18.866805 Connecting Client
+58 00:17:18.866921 Running command ['setFeatures', [2, 1]]
+58 00:17:18.866936 Sending reply (None, None)
+58 00:17:18.866957 Command Completed (socket: True)
+58 00:17:18.867243 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-raspberrypi/']]
+58 00:17:19.115624 Base config valid
+58 00:17:19.134932 Sending reply (None, None)
+58 00:17:19.134997 Command Completed (socket: True)
+58 00:17:19.135171 Running command ['parseConfiguration']
+58 00:17:19.135458 Sending reply (None, None)
+58 00:17:19.135485 Command Completed (socket: True)
+58 00:17:19.135667 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+58 00:17:19.135696 Sending reply (None, None)
+58 00:17:19.135712 Command Completed (socket: True)
+58 00:17:19.135830 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+58 00:17:19.135852 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp', None)
+58 00:17:19.135865 Command Completed (socket: True)
+58 00:17:19.146892 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.146924 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.146953 Command Completed (socket: True)
+58 00:17:19.147000 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.147035 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.147051 Command Completed (socket: True)
+58 00:17:19.147860 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.147867 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.147878 Command Completed (socket: True)
+58 00:17:19.147914 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.147931 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.147941 Command Completed (socket: True)
+58 00:17:19.148289 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.148296 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.148305 Command Completed (socket: True)
+58 00:17:19.148332 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.148344 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.148354 Command Completed (socket: True)
+58 00:17:19.148848 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.148854 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.148863 Command Completed (socket: True)
+58 00:17:19.148895 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.148908 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.148917 Command Completed (socket: True)
+58 00:17:19.149072 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.149078 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.149088 Command Completed (socket: True)
+58 00:17:19.149114 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.149128 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.149139 Command Completed (socket: True)
+58 00:17:19.149288 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+58 00:17:19.149295 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp', None)
+58 00:17:19.149304 Command Completed (socket: True)
+58 00:17:19.150102 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+58 00:17:19.150110 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+58 00:17:19.150119 Command Completed (socket: True)
+58 00:17:19.150157 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+58 00:17:19.150170 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+58 00:17:19.150180 Command Completed (socket: True)
+58 00:17:19.150613 Running command ['clientComplete']
+58 00:17:19.150635 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71f8ba497730>>
+58 00:17:19.150639 Sending reply (True, None)
+58 00:17:19.150649 Command Completed (socket: True)
+58 00:17:19.175097 Processing Client
+58 00:17:19.175227 Disconnecting Client (socket: True)
+58 00:17:19.175936 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71f8ba497730>>
+58 00:17:19.176368 No timeout, exiting.
+58 00:17:19.276776 Exiting (socket: True)
+58 00:17:19.282016 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+67 00:17:25.304544 --- Starting bitbake server pid 67 at 2024-06-03 00:17:25.304535 ---
+67 00:17:25.304886 Started bitbake server pid 67
+67 00:17:25.304987 Entering server connection loop
+67 00:17:25.304999 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+67 00:17:25.305246 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+67 00:17:25.305619 Processing Client
+67 00:17:25.305643 Connecting Client
+67 00:17:25.305774 Running command ['setFeatures', [2, 1]]
+67 00:17:25.305790 Sending reply (None, None)
+67 00:17:25.305816 Command Completed (socket: True)
+67 00:17:25.306057 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../../meta-raspberrypi/']]
+67 00:17:25.534641 Base config valid
+67 00:17:25.541257 Sending reply (None, None)
+67 00:17:25.541320 Command Completed (socket: True)
+67 00:17:25.541528 Running command ['parseConfiguration']
+67 00:17:25.541803 Sending reply (None, None)
+67 00:17:25.541833 Command Completed (socket: True)
+67 00:17:25.541995 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+67 00:17:25.542023 Sending reply (None, None)
+67 00:17:25.542038 Command Completed (socket: True)
+67 00:17:25.542151 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+67 00:17:25.542171 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp', None)
+67 00:17:25.542184 Command Completed (socket: True)
+67 00:17:25.544790 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.544818 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.544844 Command Completed (socket: True)
+67 00:17:25.545002 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.545045 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.545071 Command Completed (socket: True)
+67 00:17:25.545672 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.545691 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.545716 Command Completed (socket: True)
+67 00:17:25.545747 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.545771 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.545786 Command Completed (socket: True)
+67 00:17:25.546494 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.546502 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.546512 Command Completed (socket: True)
+67 00:17:25.546541 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.546555 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.546566 Command Completed (socket: True)
+67 00:17:25.547123 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.547142 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.547167 Command Completed (socket: True)
+67 00:17:25.547278 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.547313 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.547339 Command Completed (socket: True)
+67 00:17:25.547598 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.547607 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.547620 Command Completed (socket: True)
+67 00:17:25.547725 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.547741 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.547753 Command Completed (socket: True)
+67 00:17:25.548094 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+67 00:17:25.548101 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   ', None)
+67 00:17:25.548111 Command Completed (socket: True)
+67 00:17:25.548144 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+67 00:17:25.548156 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf'}, None)
+67 00:17:25.548167 Command Completed (socket: True)
+67 00:17:25.548334 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+67 00:17:25.548342 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp', None)
+67 00:17:25.548352 Command Completed (socket: True)
+67 00:17:25.549399 Running command ['revalidateCaches']
+67 00:17:25.549443 Found /opt/yocto/poky/build/conf/bblayers.conf changed, invalid cache
+67 00:17:25.549446 Base config invalidated
+67 00:17:25.550472 Sending reply (None, None)
+67 00:17:25.550502 Command Completed (socket: True)
+67 00:17:25.550574 Running command ['parseConfiguration']
+67 00:17:25.654405 Base config valid
+67 00:17:25.655387 Sending reply (None, None)
+67 00:17:25.655426 Command Completed (socket: True)
+67 00:17:25.655671 Running command ['clientComplete']
+67 00:17:25.655700 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71a313bc3730>>
+67 00:17:25.655704 Sending reply (True, None)
+67 00:17:25.655720 Command Completed (socket: True)
+67 00:17:25.717948 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71a313bc3730>>
+67 00:17:25.718092 Processing Client
+67 00:17:25.718276 Disconnecting Client (socket: True)
+67 00:17:25.718748 No timeout, exiting.
+67 00:17:25.819157 Exiting (socket: True)
+67 00:17:25.825634 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+78 00:17:41.778664 --- Starting bitbake server pid 78 at 2024-06-03 00:17:41.778655 ---
+78 00:17:41.779050 Started bitbake server pid 78
+78 00:17:41.779134 Entering server connection loop
+78 00:17:41.779142 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+78 00:17:41.779391 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+78 00:17:41.779853 Processing Client
+78 00:17:41.779877 Connecting Client
+78 00:17:41.779999 Running command ['setFeatures', [2, 1]]
+78 00:17:41.780015 Sending reply (None, None)
+78 00:17:41.780039 Command Completed (socket: True)
+78 00:17:41.780328 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../../meta-openembedded/meta-oe']]
+78 00:17:42.009894 Base config valid
+78 00:17:42.016402 Sending reply (None, None)
+78 00:17:42.016461 Command Completed (socket: True)
+78 00:17:42.016678 Running command ['parseConfiguration']
+78 00:17:42.016983 Sending reply (None, None)
+78 00:17:42.017012 Command Completed (socket: True)
+78 00:17:42.017240 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+78 00:17:42.017280 Sending reply (None, None)
+78 00:17:42.017305 Command Completed (socket: True)
+78 00:17:42.017472 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+78 00:17:42.017509 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi', None)
+78 00:17:42.017534 Command Completed (socket: True)
+78 00:17:42.020201 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.020231 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.020257 Command Completed (socket: True)
+78 00:17:42.020417 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.020462 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.020491 Command Completed (socket: True)
+78 00:17:42.021173 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.021192 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.021216 Command Completed (socket: True)
+78 00:17:42.021360 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.021393 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.021420 Command Completed (socket: True)
+78 00:17:42.022181 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.022191 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.022204 Command Completed (socket: True)
+78 00:17:42.022234 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.022247 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.022259 Command Completed (socket: True)
+78 00:17:42.022657 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.022670 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.022679 Command Completed (socket: True)
+78 00:17:42.022706 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.022726 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.022737 Command Completed (socket: True)
+78 00:17:42.023207 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+78 00:17:42.023226 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi', None)
+78 00:17:42.023251 Command Completed (socket: True)
+78 00:17:42.023672 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.023681 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.023693 Command Completed (socket: True)
+78 00:17:42.023730 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.023750 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.023763 Command Completed (socket: True)
+78 00:17:42.023970 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+78 00:17:42.023979 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   ', None)
+78 00:17:42.023989 Command Completed (socket: True)
+78 00:17:42.024017 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+78 00:17:42.024031 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf'}, None)
+78 00:17:42.024042 Command Completed (socket: True)
+78 00:17:42.024902 Running command ['revalidateCaches']
+78 00:17:42.024944 Found /opt/yocto/poky/build/conf/bblayers.conf changed, invalid cache
+78 00:17:42.024947 Base config invalidated
+78 00:17:42.025951 Sending reply (None, None)
+78 00:17:42.025980 Command Completed (socket: True)
+78 00:17:42.026046 Running command ['parseConfiguration']
+78 00:17:42.129843 Base config valid
+78 00:17:42.130826 Sending reply (None, None)
+78 00:17:42.130871 Command Completed (socket: True)
+78 00:17:42.131176 Running command ['clientComplete']
+78 00:17:42.131210 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x757755b73730>>
+78 00:17:42.131215 Sending reply (True, None)
+78 00:17:42.131237 Command Completed (socket: True)
+78 00:17:42.193528 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x757755b73730>>
+78 00:17:42.193673 Processing Client
+78 00:17:42.193855 Disconnecting Client (socket: True)
+78 00:17:42.194288 No timeout, exiting.
+78 00:17:42.294693 Exiting (socket: True)
+78 00:17:42.300885 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+89 00:17:45.383227 --- Starting bitbake server pid 89 at 2024-06-03 00:17:45.383218 ---
+89 00:17:45.383572 Started bitbake server pid 89
+89 00:17:45.383654 Entering server connection loop
+89 00:17:45.383664 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+89 00:17:45.383914 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+89 00:17:45.384408 Processing Client
+89 00:17:45.384429 Connecting Client
+89 00:17:45.384553 Running command ['setFeatures', [2, 1]]
+89 00:17:45.384570 Sending reply (None, None)
+89 00:17:45.384594 Command Completed (socket: True)
+89 00:17:45.384871 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../../meta-openembedded/meta-python/']]
+89 00:17:45.620810 Base config valid
+89 00:17:45.638206 Sending reply (None, None)
+89 00:17:45.638256 Command Completed (socket: True)
+89 00:17:45.638420 Running command ['parseConfiguration']
+89 00:17:45.638732 Sending reply (None, None)
+89 00:17:45.638773 Command Completed (socket: True)
+89 00:17:45.639016 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+89 00:17:45.639051 Sending reply (None, None)
+89 00:17:45.639078 Command Completed (socket: True)
+89 00:17:45.639247 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+89 00:17:45.639284 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe', None)
+89 00:17:45.639311 Command Completed (socket: True)
+89 00:17:45.641941 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.641965 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.641991 Command Completed (socket: True)
+89 00:17:45.642090 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.642117 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.642133 Command Completed (socket: True)
+89 00:17:45.642610 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.642618 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.642629 Command Completed (socket: True)
+89 00:17:45.642659 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.642679 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.642691 Command Completed (socket: True)
+89 00:17:45.643490 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.643510 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.643536 Command Completed (socket: True)
+89 00:17:45.643680 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.643717 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.643745 Command Completed (socket: True)
+89 00:17:45.644378 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.644397 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.644423 Command Completed (socket: True)
+89 00:17:45.644453 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.644476 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.644491 Command Completed (socket: True)
+89 00:17:45.644755 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+89 00:17:45.644762 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe', None)
+89 00:17:45.644772 Command Completed (socket: True)
+89 00:17:45.645321 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.645327 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.645336 Command Completed (socket: True)
+89 00:17:45.645369 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.645384 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.645396 Command Completed (socket: True)
+89 00:17:45.645577 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+89 00:17:45.645583 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   ', None)
+89 00:17:45.645592 Command Completed (socket: True)
+89 00:17:45.645619 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+89 00:17:45.645632 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf'}, None)
+89 00:17:45.645642 Command Completed (socket: True)
+89 00:17:45.646552 Running command ['revalidateCaches']
+89 00:17:45.646585 Found /opt/yocto/poky/build/conf/bblayers.conf changed, invalid cache
+89 00:17:45.646588 Base config invalidated
+89 00:17:45.647477 Sending reply (None, None)
+89 00:17:45.647506 Command Completed (socket: True)
+89 00:17:45.647578 Running command ['parseConfiguration']
+89 00:17:45.748737 Base config valid
+89 00:17:45.749815 Sending reply (None, None)
+89 00:17:45.749853 Command Completed (socket: True)
+89 00:17:45.750020 Running command ['clientComplete']
+89 00:17:45.750052 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7233efdb3730>>
+89 00:17:45.750056 Sending reply (True, None)
+89 00:17:45.750078 Command Completed (socket: True)
+89 00:17:45.794782 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7233efdb3730>>
+89 00:17:45.794936 Processing Client
+89 00:17:45.795133 Disconnecting Client (socket: True)
+89 00:17:45.795652 No timeout, exiting.
+89 00:17:45.896059 Exiting (socket: True)
+89 00:17:45.902500 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+100 00:17:49.599603 --- Starting bitbake server pid 100 at 2024-06-03 00:17:49.599595 ---
+100 00:17:49.599943 Started bitbake server pid 100
+100 00:17:49.600046 Entering server connection loop
+100 00:17:49.600058 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+100 00:17:49.600438 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+100 00:17:49.600636 Processing Client
+100 00:17:49.600657 Connecting Client
+100 00:17:49.600787 Running command ['setFeatures', [2, 1]]
+100 00:17:49.600803 Sending reply (None, None)
+100 00:17:49.600829 Command Completed (socket: True)
+100 00:17:49.601019 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../../meta-openembedded/meta-multimedia/']]
+100 00:17:49.840939 Base config valid
+100 00:17:49.857925 Sending reply (None, None)
+100 00:17:49.857983 Command Completed (socket: True)
+100 00:17:49.858086 Running command ['parseConfiguration']
+100 00:17:49.858552 Sending reply (None, None)
+100 00:17:49.858583 Command Completed (socket: True)
+100 00:17:49.858706 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+100 00:17:49.858737 Sending reply (None, None)
+100 00:17:49.858774 Command Completed (socket: True)
+100 00:17:49.858853 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+100 00:17:49.858875 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe:/opt/yocto/meta-openembedded/meta-python', None)
+100 00:17:49.858898 Command Completed (socket: True)
+100 00:17:49.861458 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.861486 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.861512 Command Completed (socket: True)
+100 00:17:49.861576 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.861612 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.861635 Command Completed (socket: True)
+100 00:17:49.862097 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.862112 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.862135 Command Completed (socket: True)
+100 00:17:49.862181 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.862207 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.862227 Command Completed (socket: True)
+100 00:17:49.862975 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.862988 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.863008 Command Completed (socket: True)
+100 00:17:49.863048 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.863072 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.863091 Command Completed (socket: True)
+100 00:17:49.863576 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.863595 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.863617 Command Completed (socket: True)
+100 00:17:49.863659 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.863688 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.863708 Command Completed (socket: True)
+100 00:17:49.863894 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+100 00:17:49.863908 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe:/opt/yocto/meta-openembedded/meta-python', None)
+100 00:17:49.863926 Command Completed (socket: True)
+100 00:17:49.864394 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.864410 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.864434 Command Completed (socket: True)
+100 00:17:49.864477 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.864501 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.864521 Command Completed (socket: True)
+100 00:17:49.864758 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+100 00:17:49.864771 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   ', None)
+100 00:17:49.864790 Command Completed (socket: True)
+100 00:17:49.864827 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+100 00:17:49.864851 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf'}, None)
+100 00:17:49.864870 Command Completed (socket: True)
+100 00:17:49.865724 Running command ['revalidateCaches']
+100 00:17:49.865776 Found /opt/yocto/poky/build/conf/bblayers.conf changed, invalid cache
+100 00:17:49.865780 Base config invalidated
+100 00:17:49.866623 Sending reply (None, None)
+100 00:17:49.866664 Command Completed (socket: True)
+100 00:17:49.866716 Running command ['parseConfiguration']
+100 00:17:49.967840 Base config valid
+100 00:17:49.968847 Sending reply (None, None)
+100 00:17:49.968887 Command Completed (socket: True)
+100 00:17:49.969055 Running command ['clientComplete']
+100 00:17:49.969088 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x75aea66ff730>>
+100 00:17:49.969093 Sending reply (True, None)
+100 00:17:49.969116 Command Completed (socket: True)
+100 00:17:50.007559 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x75aea66ff730>>
+100 00:17:50.007716 Processing Client
+100 00:17:50.007926 Disconnecting Client (socket: True)
+100 00:17:50.008618 No timeout, exiting.
+100 00:17:50.109032 Exiting (socket: True)
+100 00:17:50.115319 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+111 00:17:54.474166 --- Starting bitbake server pid 111 at 2024-06-03 00:17:54.474158 ---
+111 00:17:54.474506 Started bitbake server pid 111
+111 00:17:54.474602 Entering server connection loop
+111 00:17:54.474610 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+111 00:17:54.474950 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+111 00:17:54.475361 Processing Client
+111 00:17:54.475382 Connecting Client
+111 00:17:54.475508 Running command ['setFeatures', [2, 1]]
+111 00:17:54.475523 Sending reply (None, None)
+111 00:17:54.475548 Command Completed (socket: True)
+111 00:17:54.475826 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake-layers'}, ['/opt/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '../../../meta-openembedded/meta-networking/']]
+111 00:17:54.709611 Base config valid
+111 00:17:54.726921 Sending reply (None, None)
+111 00:17:54.726971 Command Completed (socket: True)
+111 00:17:54.727190 Running command ['parseConfiguration']
+111 00:17:54.727725 Sending reply (None, None)
+111 00:17:54.727754 Command Completed (socket: True)
+111 00:17:54.727993 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+111 00:17:54.728028 Sending reply (None, None)
+111 00:17:54.728053 Command Completed (socket: True)
+111 00:17:54.728216 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+111 00:17:54.728255 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe:/opt/yocto/meta-openembedded/meta-python:/opt/yocto/meta-openembedded/meta-multimedia', None)
+111 00:17:54.728281 Command Completed (socket: True)
+111 00:17:54.730918 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.730949 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.730974 Command Completed (socket: True)
+111 00:17:54.731122 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.731171 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.731198 Command Completed (socket: True)
+111 00:17:54.732101 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.732111 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.732128 Command Completed (socket: True)
+111 00:17:54.732217 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.732238 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.732251 Command Completed (socket: True)
+111 00:17:54.732787 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.732794 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.732804 Command Completed (socket: True)
+111 00:17:54.732836 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.732852 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.732863 Command Completed (socket: True)
+111 00:17:54.733275 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.733281 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.733290 Command Completed (socket: True)
+111 00:17:54.733319 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.733339 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.733352 Command Completed (socket: True)
+111 00:17:54.733506 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+111 00:17:54.733512 Sending reply ('/opt/yocto/poky/meta-poky:/opt/yocto/poky/build:/opt/yocto/poky/meta:/opt/yocto/poky/meta-yocto-bsp:/opt/yocto/meta-raspberrypi:/opt/yocto/meta-openembedded/meta-oe:/opt/yocto/meta-openembedded/meta-python:/opt/yocto/meta-openembedded/meta-multimedia', None)
+111 00:17:54.733522 Command Completed (socket: True)
+111 00:17:54.734024 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.734031 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.734040 Command Completed (socket: True)
+111 00:17:54.734073 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.734090 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.734103 Command Completed (socket: True)
+111 00:17:54.734280 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+111 00:17:54.734286 Sending reply ('   /opt/yocto/poky/meta   /opt/yocto/poky/meta-poky   /opt/yocto/poky/meta-yocto-bsp   /opt/yocto/meta-raspberrypi   /opt/yocto/meta-openembedded/meta-oe   /opt/yocto/meta-openembedded/meta-python   /opt/yocto/meta-openembedded/meta-multimedia   ', None)
+111 00:17:54.734295 Command Completed (socket: True)
+111 00:17:54.734322 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+111 00:17:54.734338 Sending reply ({'core': '/opt/yocto/poky/meta/conf/layer.conf', 'yocto': '/opt/yocto/poky/meta-poky/conf/layer.conf', 'yoctobsp': '/opt/yocto/poky/meta-yocto-bsp/conf/layer.conf', 'raspberrypi': '/opt/yocto/meta-raspberrypi/conf/layer.conf', 'openembedded-layer': '/opt/yocto/meta-openembedded/meta-oe/conf/layer.conf', 'meta-python': '/opt/yocto/meta-openembedded/meta-python/conf/layer.conf', 'multimedia-layer': '/opt/yocto/meta-openembedded/meta-multimedia/conf/layer.conf'}, None)
+111 00:17:54.734349 Command Completed (socket: True)
+111 00:17:54.735276 Running command ['revalidateCaches']
+111 00:17:54.735312 Found /opt/yocto/poky/build/conf/bblayers.conf changed, invalid cache
+111 00:17:54.735327 Base config invalidated
+111 00:17:54.736174 Sending reply (None, None)
+111 00:17:54.736205 Command Completed (socket: True)
+111 00:17:54.736272 Running command ['parseConfiguration']
+111 00:17:54.839292 Base config valid
+111 00:17:54.840332 Sending reply (None, None)
+111 00:17:54.840369 Command Completed (socket: True)
+111 00:17:54.840674 Running command ['clientComplete']
+111 00:17:54.840712 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e1214257730>>
+111 00:17:54.840717 Sending reply (True, None)
+111 00:17:54.840740 Command Completed (socket: True)
+111 00:17:54.885934 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e1214257730>>
+111 00:17:54.886084 Processing Client
+111 00:17:54.886268 Disconnecting Client (socket: True)
+111 00:17:54.886712 No timeout, exiting.
+111 00:17:54.987141 Exiting (socket: True)
+111 00:17:54.993601 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+42 00:28:04.785192 --- Starting bitbake server pid 42 at 2024-06-03 00:28:04.785184 ---
+42 00:28:04.785535 Started bitbake server pid 42
+42 00:28:04.785635 Entering server connection loop
+42 00:28:04.785645 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+42 00:28:04.785890 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+42 00:28:04.786272 Processing Client
+42 00:28:04.786306 Connecting Client
+42 00:28:04.786423 Running command ['setFeatures', [2, 1]]
+42 00:28:04.786439 Sending reply (None, None)
+42 00:28:04.786463 Command Completed (socket: True)
+42 00:28:04.786623 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-lab2', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+42 00:28:05.049506 Base config valid
+42 00:28:05.055233 Sending reply (None, None)
+42 00:28:05.055301 Command Completed (socket: True)
+42 00:28:05.055514 Running command ['getVariable', 'BBINCLUDELOGS']
+42 00:28:05.055566 Sending reply ('yes', None)
+42 00:28:05.055592 Command Completed (socket: True)
+42 00:28:05.055722 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+42 00:28:05.055748 Sending reply (None, None)
+42 00:28:05.055775 Command Completed (socket: True)
+42 00:28:05.055791 Running command ['getSetVariable', 'BB_CONSOLELOG']
+42 00:28:05.055844 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240603002804.log', None)
+42 00:28:05.055860 Command Completed (socket: True)
+42 00:28:05.055882 Running command ['getSetVariable', 'BB_LOGCONFIG']
+42 00:28:05.055896 Sending reply (None, None)
+42 00:28:05.055910 Command Completed (socket: True)
+42 00:28:05.056816 Running command ['getUIHandlerNum']
+42 00:28:05.056836 Sending reply (1, None)
+42 00:28:05.056861 Command Completed (socket: True)
+42 00:28:05.056972 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+42 00:28:05.056986 Sending reply (True, None)
+42 00:28:05.057003 Command Completed (socket: True)
+42 00:28:05.057099 Running command ['getVariable', 'BB_DEFAULT_TASK']
+42 00:28:05.057115 Sending reply ('build', None)
+42 00:28:05.057126 Command Completed (socket: True)
+42 00:28:05.057248 Running command ['setConfig', 'cmd', 'build']
+42 00:28:05.057258 Sending reply (None, None)
+42 00:28:05.057267 Command Completed (socket: True)
+42 00:28:05.057386 Running command ['buildTargets', ['core-image-minimal'], 'build']
+42 00:28:05.057409 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7da9aff67760>>
+42 00:28:05.057413 Sending reply (True, None)
+42 00:28:05.057423 Command Completed (socket: True)
+42 00:28:05.093367 Parsing started
+42 00:28:06.144059 Parse cache valid
+--2024-06-03 00:28:29--  http://downloads.yoctoproject.org/releases/uninative/4.4/x86_64-nativesdk-libc-4.4.tar.xz
+Resolving downloads.yoctoproject.org (downloads.yoctoproject.org)... 198.145.29.62
+Connecting to downloads.yoctoproject.org (downloads.yoctoproject.org)|198.145.29.62|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6914148 (6.6M) [application/octet-stream]
+Saving to: ‘/opt/yocto/poky/build/downloads/uninative/d81c54284be2bb886931fc87281d58177a2cd381cf99d1981f8923039a72a302/x86_64-nativesdk-libc-4.4.tar.xz.tmp’
+
+
+2024-06-03 00:28:31 (6.43 MB/s) - ‘/opt/yocto/poky/build/downloads/uninative/d81c54284be2bb886931fc87281d58177a2cd381cf99d1981f8923039a72a302/x86_64-nativesdk-libc-4.4.tar.xz.tmp’ saved [6914148/6914148]
+
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 504611 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 504674 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 505235 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 505204 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 504829 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 505072 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 508004 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 506098 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 508633 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 505031 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 504586 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 604636 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 604624 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 604640 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 756217 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 757334 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 757451 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 838343 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 874404 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 877431 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 877458 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 915572 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1075484
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1092395
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1092774
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1092952
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1093080
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1094459
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1094481
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1097501
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1097995
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1098285
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1099083
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1099762
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1098302
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1102994
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1103371
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1092382
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1110350
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1125417
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1125118
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1169200
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1172480
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1183128
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1186207
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1189134
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1189950
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1189123
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1154568
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1210518
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1213779
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1212699
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1219932
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1215334
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1227622
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1229695
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1247070
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1252512
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1259179
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1250736
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1263494
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1247664
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1269170
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1276188
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1287661
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1294537
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1302803
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1332201
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1337578
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1341159
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1358330
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1359275
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1362488
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1362166
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1375723
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1372679
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1382510
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1389033
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1393339
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1400423
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1402438
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1409054
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1411321
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1417524
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1423442
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1439543
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1448253
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1447191
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1450350
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1450865
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1454665
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1468876
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1474684
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1474335
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1391268
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1482289
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1507131
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1514327
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1529318
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550759
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550738
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550618
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550135
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550671
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550532
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550596
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1559618
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1560616
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1560791
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1550408
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1566822
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1571848
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1568181
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1569137
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1578306
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1578306
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1582037
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1582037
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1580812
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1583757
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1583757
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1582262
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1557023
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1584710
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1574986
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1584710
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1586533
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1586533
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1580812
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1587451
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1587451
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1574349
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1606937
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1613060
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1606956
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1613060
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1612919
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1613055
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632491
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632650
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632606
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632514
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632627
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632585
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1632552
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1627594
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1641784
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1642938
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1644417
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1652082
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1642562
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1662487
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1663836
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1661481
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1644532
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1606956
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1664913
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1669938
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1671083
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1669310
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1677678
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1665816
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1674910
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1684480
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1691523
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1695420
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1668797
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1693756
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1697467
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1697082
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1663765
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1681180
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1679243
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1705822
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1696053
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1705914
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1701244
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1706265
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1643336
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1705726
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1706127
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1714493
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1717293
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1703898
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1717077
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1705416
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1731803
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1735064
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1758141
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1731880
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1734481
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1736678
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1717272
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1758300
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1758441
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1706160
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1760310
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1759525
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1763818
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1766425
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1759295
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1775139
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1775693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1775366
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1761032
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1759395
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1786333
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1645033
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1775396
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1805274
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1800973
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1806869
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1812780
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1805514
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1709660
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1814124
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1817140
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1802846
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1817974
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1814124
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1820675
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1716487
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1822628
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1822628
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1819160
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1820675
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1824726
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1817140
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1824901
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1817974
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1826019
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1826019
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1824901
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1826774
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1827577
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1819160
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1828281
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 5
+Client pids: 1829847
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1829847
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1830669
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1830669
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 5
+Client pids: 1832564
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1832564
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1833992
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1835679
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1827577
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1835679
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1833992
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1838051
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1828281
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1838714
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1838992
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1840123
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1839508
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1840123
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1802846
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1842125
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1838051
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1842809
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1838714
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1826774
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1842809
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1842125
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1841559
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 1843675
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1844144
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1843675
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1844551
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1841559
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1845551
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1844551
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1844144
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1846029
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1847030
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1846654
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1847841
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1847030
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1848193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1847841
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1849110
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1846654
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1848193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1846029
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1850299
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1849613
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1852318
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1856986
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1850299
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1849110
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1849613
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1856986
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1859096
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1859096
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1861229
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1861229
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1852536
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1852536
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1852318
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1865764
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1859913
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1865764
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1864839
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1868334
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1866827
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1866827
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1864839
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 1869958
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1868334
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1845551
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1869958
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1871781
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1872532
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1873258
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1872532
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1873258
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1874166
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1873502
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1874166
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1873502
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1876775
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1876775
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1874670
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1875209
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1859913
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1878070
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1879174
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1879174
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1875449
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1878070
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1871781
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1882557
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1875449
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1882016
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1878633
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1878693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1878633
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1894164
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1890400
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1895835
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 1901229
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1901229
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 5
+Client pids: 1901232
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1901232
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1882016
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1895580
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1889311
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1959104
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1879561
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1961520
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1975093
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1982562
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1961816
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2012796
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2012796
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1991233
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2016044
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1984200
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2022949
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2022949
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2022729
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2080175
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1960881
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2117943
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2117596
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2117739
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2117943
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2117739
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2117596
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2118222
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2118222
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2089701
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2118392
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2118343
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2156621
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2118022
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1714930
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2183058
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2118136
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2183047
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2183071
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2183058
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2183047
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2183067
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2183042
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2180705
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2180708
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2183042
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2118022
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2229978
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2232228
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2236640
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2236640
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2183076
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2221285
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2252354
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2287003
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2118136
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2312996
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2313367
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2082928
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2287003
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2313430
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2337908
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2340584
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2332169
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2353128
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2332193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2332144
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2353128
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2353266
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2353266
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2420737
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2439205
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2183073
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2455631
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2455633
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2455642
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2455636
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2455631
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2455642
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2332193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2496994
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2503520
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2503531
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2503547
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2503547
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2503560
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2503781
+Server will shut down after all clients exit.
+42 00:28:31.774484 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7da99be63d00>
+42 00:28:31.774507 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7da9aff67760>>
+42 01:05:11.894674 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7da99be63d00> at idleFinish
+42 01:05:12.145309 Processing Client
+42 01:05:12.145386 Disconnecting Client (socket: True)
+42 01:05:12.145588 Parse cache invalidated
+42 01:05:12.145609 No timeout, exiting.
+42 01:05:12.245881 Exiting (socket: True)
+42 01:05:12.248882 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

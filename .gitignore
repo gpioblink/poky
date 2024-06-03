@@ -2,7 +2,14 @@
 *.pyo
 /*.patch
 /.repo/
-/build*/
+# /build*/
+
+# 開発用にconfig関連は許可
+/build*/downloads/
+/build*/cache/
+/build*/sstate-cache/
+/build*/tmp/
+
 pyshtables.py
 pstage/
 scripts/oe-git-proxy-socks
@@ -37,5 +44,3 @@ downloads/
 sstate-cache/
 toaster.sqlite
 .vscode/
-
-!build*/conf
