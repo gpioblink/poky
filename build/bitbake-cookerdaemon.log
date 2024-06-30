@@ -8696,3 +8696,777 @@ Server will shut down after all clients exit.
 18368 07:51:01.931270 Exiting (socket: True)
 18368 07:51:01.944206 Lockfile directory gone, exiting.
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+27513 10:33:31.551081 --- Starting bitbake server pid 27513 at 2024-06-30 10:33:31.551059 ---
+27513 10:33:31.551842 Started bitbake server pid 27513
+27513 10:33:31.552032 Entering server connection loop
+27513 10:33:31.552055 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+27513 10:33:31.552730 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+27513 10:33:31.553615 Processing Client
+27513 10:33:31.553642 Connecting Client
+27513 10:33:31.553957 Running command ['setFeatures', [2, 1]]
+27513 10:33:31.553998 Sending reply (None, None)
+27513 10:33:31.554056 Command Completed (socket: True)
+27513 10:33:31.554623 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver/ghid-hello5-driver', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'ghid-hello5-driver']]
+27513 10:33:31.960789 Base config valid
+27513 10:33:31.987420 Sending reply (None, None)
+27513 10:33:31.987602 Command Completed (socket: True)
+27513 10:33:31.987836 Running command ['getVariable', 'BBINCLUDELOGS']
+27513 10:33:31.987931 Sending reply ('yes', None)
+27513 10:33:31.987972 Command Completed (socket: True)
+27513 10:33:31.988112 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+27513 10:33:31.988148 Sending reply (None, None)
+27513 10:33:31.988185 Command Completed (socket: True)
+27513 10:33:31.988314 Running command ['getSetVariable', 'BB_CONSOLELOG']
+27513 10:33:31.988461 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630103331.log', None)
+27513 10:33:31.988501 Command Completed (socket: True)
+27513 10:33:31.988619 Running command ['getSetVariable', 'BB_LOGCONFIG']
+27513 10:33:31.988656 Sending reply (None, None)
+27513 10:33:31.988691 Command Completed (socket: True)
+27513 10:33:31.992354 Running command ['getUIHandlerNum']
+27513 10:33:31.992388 Sending reply (1, None)
+27513 10:33:31.992434 Command Completed (socket: True)
+27513 10:33:31.992600 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+27513 10:33:31.992627 Sending reply (True, None)
+27513 10:33:31.992663 Command Completed (socket: True)
+27513 10:33:31.992789 Running command ['getVariable', 'BB_DEFAULT_TASK']
+27513 10:33:31.992828 Sending reply ('build', None)
+27513 10:33:31.992863 Command Completed (socket: True)
+27513 10:33:31.992977 Running command ['setConfig', 'cmd', 'build']
+27513 10:33:31.993009 Sending reply (None, None)
+27513 10:33:31.993044 Command Completed (socket: True)
+27513 10:33:31.993171 Running command ['buildTargets', ['ghid-hello5-driver'], 'build']
+27513 10:33:31.993248 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f091d8b3700>>
+27513 10:33:31.993257 Sending reply (True, None)
+27513 10:33:31.993291 Command Completed (socket: True)
+27513 10:33:32.072819 Parsing started
+27513 10:33:32.278639 Parse cache valid
+27513 10:35:03.900405 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f090d8af640>
+27513 10:35:03.900445 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f091d8b3700>>
+27513 10:35:09.795360 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f090d8af640> at idleFinish
+27513 10:35:10.046756 Processing Client
+27513 10:35:10.046920 Disconnecting Client (socket: True)
+27513 10:35:10.047367 Parse cache invalidated
+27513 10:35:10.047419 No timeout, exiting.
+27513 10:35:10.148055 Exiting (socket: True)
+27513 10:35:10.161080 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+28035 10:37:43.614664 --- Starting bitbake server pid 28035 at 2024-06-30 10:37:43.614642 ---
+28035 10:37:43.615429 Started bitbake server pid 28035
+28035 10:37:43.615610 Entering server connection loop
+28035 10:37:43.615636 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+28035 10:37:43.616075 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+28035 10:37:43.617282 Processing Client
+28035 10:37:43.617309 Connecting Client
+28035 10:37:43.617626 Running command ['setFeatures', [2, 1]]
+28035 10:37:43.617670 Sending reply (None, None)
+28035 10:37:43.617728 Command Completed (socket: True)
+28035 10:37:43.618332 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver/ghid-hello5-driver', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'ghid-hello5-driver']]
+28035 10:37:44.021040 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 28517 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 28572 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 5
+Client pids: 28827 28828 28934 28918 28953 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 28827 
+Server will shut down after all clients exit.
+28035 10:37:44.048567 Sending reply (None, None)
+28035 10:37:44.048720 Command Completed (socket: True)
+28035 10:37:44.048925 Running command ['getVariable', 'BBINCLUDELOGS']
+28035 10:37:44.049036 Sending reply ('yes', None)
+28035 10:37:44.049078 Command Completed (socket: True)
+28035 10:37:44.049181 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+28035 10:37:44.049220 Sending reply (None, None)
+28035 10:37:44.049258 Command Completed (socket: True)
+28035 10:37:44.049343 Running command ['getSetVariable', 'BB_CONSOLELOG']
+28035 10:37:44.049471 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630103743.log', None)
+28035 10:37:44.049511 Command Completed (socket: True)
+28035 10:37:44.049589 Running command ['getSetVariable', 'BB_LOGCONFIG']
+28035 10:37:44.049629 Sending reply (None, None)
+28035 10:37:44.049666 Command Completed (socket: True)
+28035 10:37:44.052388 Running command ['getUIHandlerNum']
+28035 10:37:44.052424 Sending reply (1, None)
+28035 10:37:44.052468 Command Completed (socket: True)
+28035 10:37:44.052632 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+28035 10:37:44.052655 Sending reply (True, None)
+28035 10:37:44.052691 Command Completed (socket: True)
+28035 10:37:44.052810 Running command ['getVariable', 'BB_DEFAULT_TASK']
+28035 10:37:44.052844 Sending reply ('build', None)
+28035 10:37:44.052879 Command Completed (socket: True)
+28035 10:37:44.052992 Running command ['setConfig', 'cmd', 'build']
+28035 10:37:44.053024 Sending reply (None, None)
+28035 10:37:44.053060 Command Completed (socket: True)
+28035 10:37:44.053186 Running command ['buildTargets', ['ghid-hello5-driver'], 'build']
+28035 10:37:44.053250 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fc4fa9af700>>
+28035 10:37:44.053260 Sending reply (True, None)
+28035 10:37:44.053294 Command Completed (socket: True)
+28035 10:37:44.133921 Parsing started
+28035 10:37:47.392139 Parse cache valid
+28035 10:37:49.286445 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fc4e6db2dd0>
+28035 10:37:49.286489 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fc4fa9af700>>
+28035 10:37:58.964656 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fc4e6db2dd0> at idleFinish
+28035 10:37:59.215767 Processing Client
+28035 10:37:59.215923 Disconnecting Client (socket: True)
+28035 10:37:59.216356 Parse cache invalidated
+28035 10:37:59.216397 No timeout, exiting.
+28035 10:37:59.316719 Exiting (socket: True)
+28035 10:37:59.329396 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+29086 10:40:15.086857 --- Starting bitbake server pid 29086 at 2024-06-30 10:40:15.086834 ---
+29086 10:40:15.087627 Started bitbake server pid 29086
+29086 10:40:15.087817 Entering server connection loop
+29086 10:40:15.087840 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+29086 10:40:15.088277 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+29086 10:40:15.089380 Processing Client
+29086 10:40:15.089407 Connecting Client
+29086 10:40:15.089721 Running command ['setFeatures', [2, 1]]
+29086 10:40:15.089763 Sending reply (None, None)
+29086 10:40:15.089821 Command Completed (socket: True)
+29086 10:40:15.090352 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+29086 10:40:15.490949 Base config valid
+29086 10:40:15.518010 Sending reply (None, None)
+29086 10:40:15.518253 Command Completed (socket: True)
+29086 10:40:15.518516 Running command ['getVariable', 'BBINCLUDELOGS']
+29086 10:40:15.518672 Sending reply ('yes', None)
+29086 10:40:15.518763 Command Completed (socket: True)
+29086 10:40:15.518859 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+29086 10:40:15.518919 Sending reply (None, None)
+29086 10:40:15.518991 Command Completed (socket: True)
+29086 10:40:15.519075 Running command ['getSetVariable', 'BB_CONSOLELOG']
+29086 10:40:15.519285 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630104015.log', None)
+29086 10:40:15.519361 Command Completed (socket: True)
+29086 10:40:15.519436 Running command ['getSetVariable', 'BB_LOGCONFIG']
+29086 10:40:15.519508 Sending reply (None, None)
+29086 10:40:15.519584 Command Completed (socket: True)
+29086 10:40:15.524148 Running command ['getUIHandlerNum']
+29086 10:40:15.524236 Sending reply (1, None)
+29086 10:40:15.524364 Command Completed (socket: True)
+29086 10:40:15.524617 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+29086 10:40:15.524695 Sending reply (True, None)
+29086 10:40:15.524798 Command Completed (socket: True)
+29086 10:40:15.524957 Running command ['getVariable', 'BB_DEFAULT_TASK']
+29086 10:40:15.525064 Sending reply ('build', None)
+29086 10:40:15.525167 Command Completed (socket: True)
+29086 10:40:15.525318 Running command ['setConfig', 'cmd', 'build']
+29086 10:40:15.525380 Sending reply (None, None)
+29086 10:40:15.525478 Command Completed (socket: True)
+29086 10:40:15.525589 Running command ['buildTargets', ['core-image-minimal'], 'build']
+29086 10:40:15.525713 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fe035d5b700>>
+29086 10:40:15.525731 Sending reply (True, None)
+29086 10:40:15.525795 Command Completed (socket: True)
+29086 10:40:15.615525 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29181 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 29321 29322 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29321 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29558 
+Server will shut down after all clients exit.
+29086 10:40:15.822931 Parse cache valid
+29086 10:41:44.181189 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fe02578feb0>
+29086 10:41:44.181238 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fe035d5b700>>
+29086 10:41:58.690056 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fe02578feb0> at idleFinish
+29086 10:41:58.941382 Processing Client
+29086 10:41:58.941542 Disconnecting Client (socket: True)
+29086 10:41:58.941993 Parse cache invalidated
+29086 10:41:58.942034 No timeout, exiting.
+29086 10:41:59.042715 Exiting (socket: True)
+29086 10:41:59.055949 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+29613 10:45:55.956136 --- Starting bitbake server pid 29613 at 2024-06-30 10:45:55.956114 ---
+29613 10:45:55.956881 Started bitbake server pid 29613
+29613 10:45:55.957063 Entering server connection loop
+29613 10:45:55.957085 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+29613 10:45:55.957965 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+29613 10:45:55.958789 Processing Client
+29613 10:45:55.958828 Connecting Client
+29613 10:45:55.959150 Running command ['setFeatures', [2, 1]]
+29613 10:45:55.959190 Sending reply (None, None)
+29613 10:45:55.959250 Command Completed (socket: True)
+29613 10:45:55.959822 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/meta-gpioblink/recipes-kernel', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+29613 10:45:56.368622 Base config valid
+29613 10:45:56.392950 Sending reply (None, None)
+29613 10:45:56.393104 Command Completed (socket: True)
+29613 10:45:56.393333 Running command ['getVariable', 'BBINCLUDELOGS']
+29613 10:45:56.393424 Sending reply ('yes', None)
+29613 10:45:56.393466 Command Completed (socket: True)
+29613 10:45:56.393566 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+29613 10:45:56.393607 Sending reply (None, None)
+29613 10:45:56.393644 Command Completed (socket: True)
+29613 10:45:56.393731 Running command ['getSetVariable', 'BB_CONSOLELOG']
+29613 10:45:56.393880 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630104556.log', None)
+29613 10:45:56.393921 Command Completed (socket: True)
+29613 10:45:56.394002 Running command ['getSetVariable', 'BB_LOGCONFIG']
+29613 10:45:56.394041 Sending reply (None, None)
+29613 10:45:56.394079 Command Completed (socket: True)
+29613 10:45:56.397454 Running command ['getUIHandlerNum']
+29613 10:45:56.397492 Sending reply (1, None)
+29613 10:45:56.397536 Command Completed (socket: True)
+29613 10:45:56.397689 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+29613 10:45:56.397726 Sending reply (True, None)
+29613 10:45:56.397763 Command Completed (socket: True)
+29613 10:45:56.397890 Running command ['getVariable', 'BB_DEFAULT_TASK']
+29613 10:45:56.397924 Sending reply ('build', None)
+29613 10:45:56.397959 Command Completed (socket: True)
+29613 10:45:56.398073 Running command ['setConfig', 'cmd', 'build']
+29613 10:45:56.398100 Sending reply (None, None)
+29613 10:45:56.398135 Command Completed (socket: True)
+29613 10:45:56.398256 Running command ['buildTargets', ['core-image-minimal'], 'build']
+29613 10:45:56.398336 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f45fc137700>>
+29613 10:45:56.398346 Sending reply (True, None)
+29613 10:45:56.398402 Command Completed (socket: True)
+29613 10:45:56.479430 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29686 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 29826 29827 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29826 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 30063 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36582 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36593 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 36609 36610 36622 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 36609 36622 36668 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36622 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36821 
+Server will shut down after all clients exit.
+29613 10:45:56.686823 Parse cache valid
+29613 10:47:25.657651 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f45e83bb1c0>
+29613 10:47:25.657696 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f45fc137700>>
+29613 10:48:18.757136 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f45e83bb1c0> at idleFinish
+29613 10:48:19.008088 Processing Client
+29613 10:48:19.008268 Disconnecting Client (socket: True)
+29613 10:48:19.008862 Parse cache invalidated
+29613 10:48:19.008942 No timeout, exiting.
+29613 10:48:19.109298 Exiting (socket: True)
+29613 10:48:19.121053 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+36867 11:10:06.657405 --- Starting bitbake server pid 36867 at 2024-06-30 11:10:06.657381 ---
+36867 11:10:06.658174 Started bitbake server pid 36867
+36867 11:10:06.658361 Entering server connection loop
+36867 11:10:06.658452 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+36867 11:10:06.658954 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+36867 11:10:06.659964 Processing Client
+36867 11:10:06.659992 Connecting Client
+36867 11:10:06.660314 Running command ['setFeatures', [2, 1]]
+36867 11:10:06.660355 Sending reply (None, None)
+36867 11:10:06.660415 Command Completed (socket: True)
+36867 11:10:06.660965 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/meta-gpioblink/recipes-kernel/ghid-hello5-driver/ghid-hello5-driver', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+36867 11:10:07.062956 Base config valid
+36867 11:10:07.089786 Sending reply (None, None)
+36867 11:10:07.089993 Command Completed (socket: True)
+36867 11:10:07.090321 Running command ['getVariable', 'BBINCLUDELOGS']
+36867 11:10:07.090483 Sending reply ('yes', None)
+36867 11:10:07.090561 Command Completed (socket: True)
+36867 11:10:07.090737 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+36867 11:10:07.090797 Sending reply (None, None)
+36867 11:10:07.090869 Command Completed (socket: True)
+36867 11:10:07.091024 Running command ['getSetVariable', 'BB_CONSOLELOG']
+36867 11:10:07.091216 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630111006.log', None)
+36867 11:10:07.091291 Command Completed (socket: True)
+36867 11:10:07.091437 Running command ['getSetVariable', 'BB_LOGCONFIG']
+36867 11:10:07.091499 Sending reply (None, None)
+36867 11:10:07.091570 Command Completed (socket: True)
+36867 11:10:07.095213 Running command ['getUIHandlerNum']
+36867 11:10:07.095248 Sending reply (1, None)
+36867 11:10:07.095296 Command Completed (socket: True)
+36867 11:10:07.095456 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+36867 11:10:07.095493 Sending reply (True, None)
+36867 11:10:07.095531 Command Completed (socket: True)
+36867 11:10:07.095655 Running command ['getVariable', 'BB_DEFAULT_TASK']
+36867 11:10:07.095688 Sending reply ('build', None)
+36867 11:10:07.095724 Command Completed (socket: True)
+36867 11:10:07.095837 Running command ['setConfig', 'cmd', 'build']
+36867 11:10:07.095870 Sending reply (None, None)
+36867 11:10:07.095906 Command Completed (socket: True)
+36867 11:10:07.096028 Running command ['buildTargets', ['core-image-minimal'], 'build']
+36867 11:10:07.096094 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fe353f17700>>
+36867 11:10:07.096104 Sending reply (True, None)
+36867 11:10:07.096140 Command Completed (socket: True)
+36867 11:10:07.187810 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37365 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37420 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 37604 37609 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 37606 37608 37685 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37604 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37606 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37915 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44434 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44445 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 44461 44463 44473 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 44461 44473 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44473 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44673 
+Server will shut down after all clients exit.
+36867 11:10:10.568509 Parse cache valid
+36867 11:10:13.735887 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fe34002f490>
+36867 11:10:13.735934 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fe353f17700>>
+36867 11:11:11.514559 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fe34002f490> at idleFinish
+36867 11:11:11.765741 Processing Client
+36867 11:11:11.765885 Disconnecting Client (socket: True)
+36867 11:11:11.766316 Parse cache invalidated
+36867 11:11:11.766357 No timeout, exiting.
+36867 11:11:11.866973 Exiting (socket: True)
+36867 11:11:11.880327 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+44731 12:24:47.501387 --- Starting bitbake server pid 44731 at 2024-06-30 12:24:47.501365 ---
+44731 12:24:47.502142 Started bitbake server pid 44731
+44731 12:24:47.502330 Entering server connection loop
+44731 12:24:47.502356 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+44731 12:24:47.502961 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+44731 12:24:47.503905 Processing Client
+44731 12:24:47.503944 Connecting Client
+44731 12:24:47.504260 Running command ['setFeatures', [2, 1]]
+44731 12:24:47.504302 Sending reply (None, None)
+44731 12:24:47.504361 Command Completed (socket: True)
+44731 12:24:47.504930 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+44731 12:24:47.906837 Base config valid
+44731 12:24:47.935902 Sending reply (None, None)
+44731 12:24:47.936054 Command Completed (socket: True)
+44731 12:24:47.936285 Running command ['getVariable', 'BBINCLUDELOGS']
+44731 12:24:47.936378 Sending reply ('yes', None)
+44731 12:24:47.936421 Command Completed (socket: True)
+44731 12:24:47.936551 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+44731 12:24:47.936583 Sending reply (None, None)
+44731 12:24:47.936620 Command Completed (socket: True)
+44731 12:24:47.936735 Running command ['getSetVariable', 'BB_CONSOLELOG']
+44731 12:24:47.936877 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630122447.log', None)
+44731 12:24:47.936916 Command Completed (socket: True)
+44731 12:24:47.937026 Running command ['getSetVariable', 'BB_LOGCONFIG']
+44731 12:24:47.937061 Sending reply (None, None)
+44731 12:24:47.937099 Command Completed (socket: True)
+44731 12:24:47.940376 Running command ['getUIHandlerNum']
+44731 12:24:47.940417 Sending reply (1, None)
+44731 12:24:47.940463 Command Completed (socket: True)
+44731 12:24:47.940611 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+44731 12:24:47.940648 Sending reply (True, None)
+44731 12:24:47.940685 Command Completed (socket: True)
+44731 12:24:47.940801 Running command ['getVariable', 'BB_DEFAULT_TASK']
+44731 12:24:47.940846 Sending reply ('build', None)
+44731 12:24:47.940883 Command Completed (socket: True)
+44731 12:24:47.940990 Running command ['setConfig', 'cmd', 'build']
+44731 12:24:47.941014 Sending reply (None, None)
+44731 12:24:47.941049 Command Completed (socket: True)
+44731 12:24:47.941166 Running command ['buildTargets', ['core-image-minimal'], 'build']
+44731 12:24:47.941231 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f5df8a07700>>
+44731 12:24:47.941240 Sending reply (True, None)
+44731 12:24:47.941274 Command Completed (socket: True)
+44731 12:24:48.031831 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44804 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 44944 44945 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44944 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 45181 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53422 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53433 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 53452 53453 53465 53481 53498 53501 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 53452 53465 53501 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53465 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53667 
+Server will shut down after all clients exit.
+44731 12:24:48.238224 Parse cache valid
+44731 12:26:18.657421 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f5de89bb760>
+44731 12:26:18.657465 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f5df8a07700>>
+44731 12:27:31.377116 Running command ['ping']
+44731 12:27:31.377188 Sending reply ('Still alive!', None)
+44731 12:27:31.377307 Command Completed (socket: True)
+44731 12:28:17.327333 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f5de89bb760> at idleFinish
+44731 12:28:17.578777 Processing Client
+44731 12:28:17.578942 Disconnecting Client (socket: True)
+44731 12:28:17.579385 Parse cache invalidated
+44731 12:28:17.579427 No timeout, exiting.
+44731 12:28:17.679805 Exiting (socket: True)
+44731 12:28:17.691874 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+53717 13:57:16.068899 --- Starting bitbake server pid 53717 at 2024-06-30 13:57:16.068876 ---
+53717 13:57:16.069648 Started bitbake server pid 53717
+53717 13:57:16.069827 Entering server connection loop
+53717 13:57:16.069853 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+53717 13:57:16.070560 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+53717 13:57:16.071451 Processing Client
+53717 13:57:16.071478 Connecting Client
+53717 13:57:16.071794 Running command ['setFeatures', [2, 1]]
+53717 13:57:16.071837 Sending reply (None, None)
+53717 13:57:16.071897 Command Completed (socket: True)
+53717 13:57:16.072487 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+53717 13:57:16.463645 Base config valid
+53717 13:57:16.492148 Sending reply (None, None)
+53717 13:57:16.492295 Command Completed (socket: True)
+53717 13:57:16.492533 Running command ['getVariable', 'BBINCLUDELOGS']
+53717 13:57:16.492625 Sending reply ('yes', None)
+53717 13:57:16.492669 Command Completed (socket: True)
+53717 13:57:16.492800 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+53717 13:57:16.492839 Sending reply (None, None)
+53717 13:57:16.492877 Command Completed (socket: True)
+53717 13:57:16.492993 Running command ['getSetVariable', 'BB_CONSOLELOG']
+53717 13:57:16.493129 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630135716.log', None)
+53717 13:57:16.493171 Command Completed (socket: True)
+53717 13:57:16.493278 Running command ['getSetVariable', 'BB_LOGCONFIG']
+53717 13:57:16.493312 Sending reply (None, None)
+53717 13:57:16.493350 Command Completed (socket: True)
+53717 13:57:16.496937 Running command ['getUIHandlerNum']
+53717 13:57:16.496976 Sending reply (1, None)
+53717 13:57:16.497021 Command Completed (socket: True)
+53717 13:57:16.497185 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+53717 13:57:16.497222 Sending reply (True, None)
+53717 13:57:16.497259 Command Completed (socket: True)
+53717 13:57:16.497384 Running command ['getVariable', 'BB_DEFAULT_TASK']
+53717 13:57:16.497422 Sending reply ('build', None)
+53717 13:57:16.497458 Command Completed (socket: True)
+53717 13:57:16.497572 Running command ['setConfig', 'cmd', 'build']
+53717 13:57:16.497595 Sending reply (None, None)
+53717 13:57:16.497630 Command Completed (socket: True)
+53717 13:57:16.497764 Running command ['buildTargets', ['core-image-minimal'], 'build']
+53717 13:57:16.497829 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f0f651b7700>>
+53717 13:57:16.497839 Sending reply (True, None)
+53717 13:57:16.497874 Command Completed (socket: True)
+53717 13:57:16.590556 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53834 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53831 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 54263 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 54414 54415 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 54414 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 54384 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 54845 54846 54909 54914 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 54845 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 53818 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 81196 81198 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 81196 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 81201 81203 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 81201 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 113209 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121517 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121528 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 121547 121549 121559 121576 121592 121596 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 121547 121559 121596 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121559 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121762 
+Server will shut down after all clients exit.
+53717 13:57:16.799779 Parse cache valid
+53717 13:58:47.254278 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f0f51423f40>
+53717 13:58:47.254324 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f0f651b7700>>
+53717 14:00:01.958669 Running command ['ping']
+53717 14:00:01.958748 Sending reply ('Still alive!', None)
+53717 14:00:01.958880 Command Completed (socket: True)
+53717 14:01:02.015679 Running command ['ping']
+53717 14:01:02.015731 Sending reply ('Still alive!', None)
+53717 14:01:02.015814 Command Completed (socket: True)
+53717 14:04:40.610039 Running command ['ping']
+53717 14:04:40.610089 Sending reply ('Still alive!', None)
+53717 14:04:40.610169 Command Completed (socket: True)
+53717 14:05:27.541654 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f0f51423f40> at idleFinish
+53717 14:05:27.792985 Processing Client
+53717 14:05:27.793128 Disconnecting Client (socket: True)
+53717 14:05:27.793565 Parse cache invalidated
+53717 14:05:27.793616 No timeout, exiting.
+53717 14:05:27.893994 Exiting (socket: True)
+53717 14:05:27.909255 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+121789 14:35:05.181486 --- Starting bitbake server pid 121789 at 2024-06-30 14:35:05.181463 ---
+121789 14:35:05.182255 Started bitbake server pid 121789
+121789 14:35:05.182484 Entering server connection loop
+121789 14:35:05.182508 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+121789 14:35:05.182967 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+121789 14:35:05.184043 Processing Client
+121789 14:35:05.184070 Connecting Client
+121789 14:35:05.184386 Running command ['setFeatures', [2, 1]]
+121789 14:35:05.184428 Sending reply (None, None)
+121789 14:35:05.184489 Command Completed (socket: True)
+121789 14:35:05.185058 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+121789 14:35:05.573020 Base config valid
+121789 14:35:05.600503 Sending reply (None, None)
+121789 14:35:05.600662 Command Completed (socket: True)
+121789 14:35:05.600861 Running command ['getVariable', 'BBINCLUDELOGS']
+121789 14:35:05.600956 Sending reply ('yes', None)
+121789 14:35:05.601001 Command Completed (socket: True)
+121789 14:35:05.601103 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+121789 14:35:05.601140 Sending reply (None, None)
+121789 14:35:05.601178 Command Completed (socket: True)
+121789 14:35:05.601265 Running command ['getSetVariable', 'BB_CONSOLELOG']
+121789 14:35:05.601405 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630143505.log', None)
+121789 14:35:05.601447 Command Completed (socket: True)
+121789 14:35:05.601527 Running command ['getSetVariable', 'BB_LOGCONFIG']
+121789 14:35:05.601568 Sending reply (None, None)
+121789 14:35:05.601605 Command Completed (socket: True)
+121789 14:35:05.604399 Running command ['getUIHandlerNum']
+121789 14:35:05.604438 Sending reply (1, None)
+121789 14:35:05.604485 Command Completed (socket: True)
+121789 14:35:05.604654 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+121789 14:35:05.604693 Sending reply (True, None)
+121789 14:35:05.604731 Command Completed (socket: True)
+121789 14:35:05.604859 Running command ['getVariable', 'BB_DEFAULT_TASK']
+121789 14:35:05.604894 Sending reply ('build', None)
+121789 14:35:05.604930 Command Completed (socket: True)
+121789 14:35:05.605044 Running command ['setConfig', 'cmd', 'build']
+121789 14:35:05.605073 Sending reply (None, None)
+121789 14:35:05.605109 Command Completed (socket: True)
+121789 14:35:05.605234 Running command ['buildTargets', ['core-image-minimal'], 'build']
+121789 14:35:05.605303 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f3812b03700>>
+121789 14:35:05.605313 Sending reply (True, None)
+121789 14:35:05.605347 Command Completed (socket: True)
+121789 14:35:05.704522 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121865 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121866 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 121862 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 148465 148467 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 148465 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 148556 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 156864 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 156875 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 156894 156895 156907 156923 156940 156942 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 156894 157061 156907 156942 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 156907 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 157109 
+Server will shut down after all clients exit.
+121789 14:35:05.916589 Parse cache valid
+121789 14:36:35.339380 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f37fe52fd90>
+121789 14:36:35.339427 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f3812b03700>>
+121789 14:37:49.156582 Running command ['ping']
+121789 14:37:49.156672 Sending reply ('Still alive!', None)
+121789 14:37:49.156785 Command Completed (socket: True)
+121789 14:38:49.210620 Running command ['ping']
+121789 14:38:49.210701 Sending reply ('Still alive!', None)
+121789 14:38:49.210867 Command Completed (socket: True)
+121789 14:40:51.444250 Running command ['ping']
+121789 14:40:51.444329 Sending reply ('Still alive!', None)
+121789 14:40:51.444496 Command Completed (socket: True)
+121789 14:41:39.369436 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f37fe52fd90> at idleFinish
+121789 14:41:39.620439 Processing Client
+121789 14:41:39.620601 Disconnecting Client (socket: True)
+121789 14:41:39.621069 Parse cache invalidated
+121789 14:41:39.621120 No timeout, exiting.
+121789 14:41:39.721448 Exiting (socket: True)
+121789 14:41:39.733509 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+157139 15:48:26.839437 --- Starting bitbake server pid 157139 at 2024-06-30 15:48:26.839415 ---
+157139 15:48:26.840195 Started bitbake server pid 157139
+157139 15:48:26.840372 Entering server connection loop
+157139 15:48:26.840395 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+157139 15:48:26.841071 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+157139 15:48:26.842050 Processing Client
+157139 15:48:26.842077 Connecting Client
+157139 15:48:26.842402 Running command ['setFeatures', [2, 1]]
+157139 15:48:26.842447 Sending reply (None, None)
+157139 15:48:26.842518 Command Completed (socket: True)
+157139 15:48:26.843148 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build/conf', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky/build', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+157139 15:48:27.250764 Base config valid
+157139 15:48:27.275429 Sending reply (None, None)
+157139 15:48:27.275635 Command Completed (socket: True)
+157139 15:48:27.275869 Running command ['getVariable', 'BBINCLUDELOGS']
+157139 15:48:27.276002 Sending reply ('yes', None)
+157139 15:48:27.276078 Command Completed (socket: True)
+157139 15:48:27.276192 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+157139 15:48:27.276248 Sending reply (None, None)
+157139 15:48:27.276320 Command Completed (socket: True)
+157139 15:48:27.276423 Running command ['getSetVariable', 'BB_CONSOLELOG']
+157139 15:48:27.276648 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi0-wifi/20240630154826.log', None)
+157139 15:48:27.276721 Command Completed (socket: True)
+157139 15:48:27.276816 Running command ['getSetVariable', 'BB_LOGCONFIG']
+157139 15:48:27.276877 Sending reply (None, None)
+157139 15:48:27.276947 Command Completed (socket: True)
+157139 15:48:27.279677 Running command ['getUIHandlerNum']
+157139 15:48:27.279711 Sending reply (1, None)
+157139 15:48:27.279756 Command Completed (socket: True)
+157139 15:48:27.279915 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+157139 15:48:27.279943 Sending reply (True, None)
+157139 15:48:27.279980 Command Completed (socket: True)
+157139 15:48:27.280112 Running command ['getVariable', 'BB_DEFAULT_TASK']
+157139 15:48:27.280145 Sending reply ('build', None)
+157139 15:48:27.280180 Command Completed (socket: True)
+157139 15:48:27.280297 Running command ['setConfig', 'cmd', 'build']
+157139 15:48:27.280323 Sending reply (None, None)
+157139 15:48:27.280357 Command Completed (socket: True)
+157139 15:48:27.280486 Running command ['buildTargets', ['core-image-minimal'], 'build']
+157139 15:48:27.280552 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f4e70f9b700>>
+157139 15:48:27.280562 Sending reply (True, None)
+157139 15:48:27.280596 Command Completed (socket: True)
+157139 15:48:27.373511 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 157256 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 157254 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 157251 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 183891 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 192132 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 192143 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 192162 192163 192175 192191 192210 192198 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 192162 192321 192175 192198 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 192175 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 192377 
+Server will shut down after all clients exit.
+157139 15:48:27.585369 Parse cache valid
+157139 15:50:00.094072 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f4e60e57880>
+157139 15:50:00.094120 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f4e70f9b700>>
+157139 15:51:14.271149 Running command ['ping']
+157139 15:51:14.271222 Sending reply ('Still alive!', None)
+157139 15:51:14.271364 Command Completed (socket: True)
+157139 15:52:14.325896 Running command ['ping']
+157139 15:52:14.325941 Sending reply ('Still alive!', None)
+157139 15:52:14.326026 Command Completed (socket: True)
+157139 15:54:13.596434 Running command ['ping']
+157139 15:54:13.596515 Sending reply ('Still alive!', None)
+157139 15:54:13.596663 Command Completed (socket: True)
+157139 15:55:00.667986 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f4e60e57880> at idleFinish
+157139 15:55:00.919293 Processing Client
+157139 15:55:00.919443 Disconnecting Client (socket: True)
+157139 15:55:00.919848 Parse cache invalidated
+157139 15:55:00.919889 No timeout, exiting.
+157139 15:55:01.020276 Exiting (socket: True)
+157139 15:55:01.032134 Lockfile directory gone, exiting.
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
