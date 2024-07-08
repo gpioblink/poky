@@ -10893,3 +10893,1496 @@ Saving to: ‘/opt/yocto/poky/build/downloads/uninative/d81c54284be2bb886931fc87
 93 12:37:19.334083 Exiting (socket: True)
 93 12:37:19.347924 Lockfile directory gone, exiting.
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+43 15:35:18.909887 --- Starting bitbake server pid 43 at 2024-07-07 15:35:18.909865 ---
+43 15:35:18.910692 Started bitbake server pid 43
+43 15:35:18.910887 Entering server connection loop
+43 15:35:18.910909 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+43 15:35:18.911272 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+43 15:35:18.912650 Processing Client
+43 15:35:18.912678 Connecting Client
+43 15:35:18.912997 Running command ['setFeatures', [2, 1]]
+43 15:35:18.913036 Sending reply (None, None)
+43 15:35:18.913096 Command Completed (socket: True)
+43 15:35:18.913732 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'GPG_TTY': '/dev/pts/0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+43 15:35:19.814557 Base config valid
+43 15:35:19.898020 Sending reply (None, None)
+43 15:35:19.898247 Command Completed (socket: True)
+43 15:35:19.898487 Running command ['getVariable', 'BBINCLUDELOGS']
+43 15:35:19.898666 Sending reply ('yes', None)
+43 15:35:19.898753 Command Completed (socket: True)
+43 15:35:19.898830 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+43 15:35:19.898890 Sending reply (None, None)
+43 15:35:19.898967 Command Completed (socket: True)
+43 15:35:19.899036 Running command ['getSetVariable', 'BB_CONSOLELOG']
+43 15:35:19.899267 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi4-64/20240707153519.log', None)
+43 15:35:19.899342 Command Completed (socket: True)
+43 15:35:19.899410 Running command ['getSetVariable', 'BB_LOGCONFIG']
+43 15:35:19.899470 Sending reply (None, None)
+43 15:35:19.899544 Command Completed (socket: True)
+43 15:35:19.901735 Running command ['getUIHandlerNum']
+43 15:35:19.901799 Sending reply (1, None)
+43 15:35:19.901883 Command Completed (socket: True)
+43 15:35:19.902002 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+43 15:35:19.902038 Sending reply (True, None)
+43 15:35:19.902095 Command Completed (socket: True)
+43 15:35:19.902169 Running command ['getVariable', 'BB_DEFAULT_TASK']
+43 15:35:19.902222 Sending reply ('build', None)
+43 15:35:19.902275 Command Completed (socket: True)
+43 15:35:19.902340 Running command ['setConfig', 'cmd', 'build']
+43 15:35:19.902383 Sending reply (None, None)
+43 15:35:19.902437 Command Completed (socket: True)
+43 15:35:19.902512 Running command ['buildTargets', ['core-image-minimal'], 'build']
+43 15:35:19.902602 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f0efce1f700>>
+43 15:35:19.902618 Sending reply (True, None)
+43 15:35:19.902668 Command Completed (socket: True)
+43 15:35:19.933808 Parsing started
+42 15:36:02.287459 --- Starting bitbake server pid 42 at 2024-07-07 15:36:02.287436 ---
+42 15:36:02.287505 WARNING: removing existing socket file '/opt/yocto/poky/build/bitbake.sock'
+42 15:36:02.288287 Started bitbake server pid 42
+42 15:36:02.288486 Entering server connection loop
+42 15:36:02.288509 Lockfile is: /opt/yocto/poky/build/bitbake.lock
+Socket is /opt/yocto/poky/build/bitbake.sock (True)
+42 15:36:02.288879 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+42 15:36:02.290080 Processing Client
+42 15:36:02.290128 Connecting Client
+42 15:36:02.290466 Running command ['setFeatures', [2, 1]]
+42 15:36:02.290510 Sending reply (None, None)
+42 15:36:02.290575 Command Completed (socket: True)
+42 15:36:02.291379 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/opt/yocto/poky/build', 'HOME': '/home/gpioblink', 'BBPATH': '/opt/yocto/poky/build', 'LC_ALL': 'en_US.UTF-8', 'PATH': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:/opt/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'OE_ADDED_PATHS': '/opt/yocto/poky/scripts:/opt/yocto/poky/bitbake/bin:', 'HOSTNAME': 'gpioblink-ThinkCentre-M75q-1', 'GPG_TTY': '/dev/pts/0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/opt/yocto/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': 'localhost:10.0', 'SHLVL': '1', 'BUILDDIR': '/opt/yocto/poky/build', 'DEBIAN_FRONTEND': 'noninteractive', 'OLDPWD': '/opt/yocto/poky', '_': '/opt/yocto/poky/bitbake/bin/bitbake'}, ['/opt/yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+42 15:36:03.073585 Base config valid
+42 15:36:03.090912 Sending reply (None, None)
+42 15:36:03.091066 Command Completed (socket: True)
+42 15:36:03.091292 Running command ['getVariable', 'BBINCLUDELOGS']
+42 15:36:03.091388 Sending reply ('yes', None)
+42 15:36:03.091429 Command Completed (socket: True)
+42 15:36:03.091544 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+42 15:36:03.091574 Sending reply (None, None)
+42 15:36:03.091608 Command Completed (socket: True)
+42 15:36:03.091707 Running command ['getSetVariable', 'BB_CONSOLELOG']
+42 15:36:03.091844 Sending reply ('/opt/yocto/poky/build/tmp/log/cooker/raspberrypi4-64/20240707153602.log', None)
+42 15:36:03.091883 Command Completed (socket: True)
+42 15:36:03.091976 Running command ['getSetVariable', 'BB_LOGCONFIG']
+42 15:36:03.092011 Sending reply (None, None)
+42 15:36:03.092045 Command Completed (socket: True)
+42 15:36:03.095725 Running command ['getUIHandlerNum']
+42 15:36:03.095766 Sending reply (1, None)
+42 15:36:03.095811 Command Completed (socket: True)
+42 15:36:03.095965 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+42 15:36:03.095992 Sending reply (True, None)
+42 15:36:03.096026 Command Completed (socket: True)
+42 15:36:03.096127 Running command ['getVariable', 'BB_DEFAULT_TASK']
+42 15:36:03.096162 Sending reply ('build', None)
+42 15:36:03.096195 Command Completed (socket: True)
+42 15:36:03.096288 Running command ['setConfig', 'cmd', 'build']
+42 15:36:03.096313 Sending reply (None, None)
+42 15:36:03.096345 Command Completed (socket: True)
+42 15:36:03.096456 Running command ['buildTargets', ['core-image-minimal'], 'build']
+42 15:36:03.096510 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fc44e45f700>>
+42 15:36:03.096521 Sending reply (True, None)
+42 15:36:03.096553 Command Completed (socket: True)
+42 15:36:03.124177 Parsing started
+42 15:36:03.368105 Parse cache valid
+--2024-07-07 15:38:02--  http://downloads.yoctoproject.org/releases/uninative/4.4/x86_64-nativesdk-libc-4.4.tar.xz
+Resolving downloads.yoctoproject.org (downloads.yoctoproject.org)... 198.145.29.62
+Connecting to downloads.yoctoproject.org (downloads.yoctoproject.org)|198.145.29.62|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6914148 (6.6M) [application/octet-stream]
+Saving to: ‘/opt/yocto/poky/build/downloads/uninative/d81c54284be2bb886931fc87281d58177a2cd381cf99d1981f8923039a72a302/x86_64-nativesdk-libc-4.4.tar.xz.tmp’
+
+
+2024-07-07 15:38:03 (4.90 MB/s) - ‘/opt/yocto/poky/build/downloads/uninative/d81c54284be2bb886931fc87281d58177a2cd381cf99d1981f8923039a72a302/x86_64-nativesdk-libc-4.4.tar.xz.tmp’ saved [6914148/6914148]
+
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 229483 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 428978 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 442569 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 441344 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 518701 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 524459 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 537162 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 537422 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 537387 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 544026 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 544581 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 709545 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 711776 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 712108 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 725606 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 725911 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 730226 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 833287 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 865320 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 865385 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 865395 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 895704 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1029496
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1037422
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1040762
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1041108
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1041040
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1042850
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1043655
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1043470
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1044069
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1043220
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1050305
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1050670
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1051379
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1052064
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1053093
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1053434
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1061945
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1063574
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1086232
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1105780
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1107252
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1152732
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1159175
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1164033
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1180239
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1197259
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1212770
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1206839
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1219489
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1220334
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1220087
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1222106
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1218347
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1235275
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1237415
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1238637
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1232969
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1252135
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1254026
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1255530
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1254774
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1256785
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1257140
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1252464
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1241325
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1275689
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1275489
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1278371
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1259260
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1285317
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1311453
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1313616
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1296841
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1320199
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1319971
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1320209
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1323159
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1324036
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1277004
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1327265
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1329803
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1338595
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1340790
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1349402
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1334572
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1353154
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1353868
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1366448
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1369149
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1379103
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1385481
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1424555
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1360180
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1431166
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1433834
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1452553
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1453437
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1455217
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1453932
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1456843
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1462675
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1467441
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1499608
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1501968
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1508366
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1512612
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1517649
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1516210
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1523132
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1522586
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1518403
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1515760
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1530870
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1534262
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1529213
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1544877
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1548021
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1526809
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1559184
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1563241
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1563725
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1569154
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1583568
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1585660
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1597429
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1600648
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1606226
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1576836
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1609267
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1611452
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1614023
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1613438
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1616626
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1616612
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1616762
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1615506
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1617544
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1555359
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1627384
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1620269
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1670053
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1674468
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1675557
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1675349
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1677755
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1604943
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1676265
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1677326
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1681746
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1686458
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1611082
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1698051
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1681505
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1682062
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1679452
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1718065
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1718323
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1725577
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1728294
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1719454
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1732268
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1737919
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1741661
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1744731
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1743115
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1732525
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1747605
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1747445
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1749198
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1752059
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1755599
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1751575
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1764200
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1787124
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1787991
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1788805
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1795331
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1795835
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1798204
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1797495
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1802440
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1804650
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1807727
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1713464
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1817364
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1819559
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1825114
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1827332
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1847708
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1852264
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1869062
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1828452
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1870103
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1871774
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1875527
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1872938
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1870587
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1877386
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1878665
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1871056
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1876979
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1880571
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1879917
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1880515
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1882424
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1883404
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1884543
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1885944
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1887144
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1883678
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1890921
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1890755
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1891064
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1894964
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1895917
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1899428
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1901380
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1902052
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1906053
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1905557
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1957964
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1959766
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1960021
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1961039
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1962679
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1959923
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1966983
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1964405
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1967758
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1968150
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1968150
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1964405
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1969460
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1969460
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1972513
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1972513
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1976047
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1978891
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1981178
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1982310
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1983564
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1985556
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1973382
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 1987011
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1988661
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1989353
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1990862
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1992261
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1973382
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1993310
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1989353
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1995423
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1993310
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 1997080
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1997080
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2000123
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1995423
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2000123
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2002026
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2003100
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2001439
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2001455
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2004062
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2004062
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2004494
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2004781
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2005192
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2004494
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2005803
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2005803
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2006496
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2006496
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2006871
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2006871
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2007116
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2007116
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2007418
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2007418
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2007658
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2007786
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2008130
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 2008241
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2008241
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2008710
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2009017
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2008710
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2009504
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2009693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2009693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2009977
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2009977
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2010435
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2008130
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2010435
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2011115
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2011115
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2013073
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2013475
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2010932
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 1749226
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2030087
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2013769
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2047197
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2055560
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2055560
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2058490
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2058490
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2059219
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2059219
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2045511
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2061408
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2061408
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2064193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2064193
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2061636
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2013769
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2066958
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2072730
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2074986
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2075308
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2076255
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2076712
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2076834
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2066958
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2077036
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2077036
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2078414
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2078626
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2076255
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2078924
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2077702
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2078924
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2077702
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2079447
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2079447
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2072730
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2079809
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2079809
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2081132
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2080376
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2081132
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2080765
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2081920
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2081920
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2082301
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2082301
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2082017
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2083171
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2083171
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2082642
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2082642
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2083693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2082017
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2083693
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2084071
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2084071
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2084366
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2084366
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2084757
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2084757
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2084534
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2084534
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2085306
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2085306
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 5
+Client pids: 2085660
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2085660
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2085083
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2085999
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2085999
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2086149
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2086149
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2086369
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2086369
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2086568
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2086568
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2085083
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2086980
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2087064
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2086861
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2010932
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2087509
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2087509
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2087370
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2086861
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2088253
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2088253
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2087370
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2088867
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2089143
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2089319
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2089574
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2088623
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2088663
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2090160
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2091218
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2092589
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2093053
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2093190
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2092589
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2093756
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2093756
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2090160
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2091218
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2087968
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2087968
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2124426
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2130706
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2134798
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2134820
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2134848
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2134820
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2134848
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2134797
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2172837
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2172865
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2173540
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2173540
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2174661
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2175581
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2177808
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2177808
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2172850
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2185483
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2212564
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2212564
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2212569
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2212569
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 2212574
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 2212576
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2212571
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2212576
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2249034
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2257339
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2257350
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 2257369
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 2257369
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2257382
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 2257576
+Server will shut down after all clients exit.
+42 15:38:05.049893 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fc43a703b50>
+42 15:38:05.049936 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fc44e45f700>>
+42 17:43:41.180199 Running command ['ping']
+42 17:43:41.193716 Sending reply ('Still alive!', None)
+42 17:43:41.196271 Command Completed (socket: True)
+42 17:44:41.358164 Running command ['ping']
+42 17:44:41.358253 Sending reply ('Still alive!', None)
+42 17:44:41.358451 Command Completed (socket: True)
+42 17:45:41.533984 Running command ['ping']
+42 17:45:41.534044 Sending reply ('Still alive!', None)
+42 17:45:41.534157 Command Completed (socket: True)
+42 17:46:41.689073 Running command ['ping']
+42 17:46:41.689375 Sending reply ('Still alive!', None)
+42 17:46:41.689549 Command Completed (socket: True)
+42 17:47:41.824238 Running command ['ping']
+42 17:47:41.824295 Sending reply ('Still alive!', None)
+42 17:47:41.824410 Command Completed (socket: True)
+42 17:49:40.284324 Running command ['ping']
+42 17:49:40.291961 Sending reply ('Still alive!', None)
+42 17:49:40.292136 Command Completed (socket: True)
+42 17:50:40.410638 Running command ['ping']
+42 17:50:40.410696 Sending reply ('Still alive!', None)
+42 17:50:40.410820 Command Completed (socket: True)
+42 17:56:17.591065 Running command ['ping']
+42 17:56:17.595132 Sending reply ('Still alive!', None)
+42 17:56:17.596233 Command Completed (socket: True)
+42 17:57:34.812431 Running command ['ping']
+42 17:57:34.812481 Sending reply ('Still alive!', None)
+42 17:57:34.812574 Command Completed (socket: True)
+42 17:58:34.945736 Running command ['ping']
+42 17:58:34.945804 Sending reply ('Still alive!', None)
+42 17:58:34.945917 Command Completed (socket: True)
+42 18:00:22.157820 Running command ['ping']
+42 18:00:22.165323 Sending reply ('Still alive!', None)
+42 18:00:22.165521 Command Completed (socket: True)
+42 18:01:22.269908 Running command ['ping']
+42 18:01:22.277326 Sending reply ('Still alive!', None)
+42 18:01:22.277505 Command Completed (socket: True)
+42 18:02:22.358240 Running command ['ping']
+42 18:02:22.358461 Sending reply ('Still alive!', None)
+42 18:02:22.358761 Command Completed (socket: True)
+42 18:03:22.479775 Running command ['ping']
+42 18:03:22.479830 Sending reply ('Still alive!', None)
+42 18:03:22.479948 Command Completed (socket: True)
+42 18:04:22.559298 Running command ['ping']
+42 18:04:22.559357 Sending reply ('Still alive!', None)
+42 18:04:22.559465 Command Completed (socket: True)
+42 18:05:22.663791 Running command ['ping']
+42 18:05:22.664386 Sending reply ('Still alive!', None)
+42 18:05:22.664549 Command Completed (socket: True)
+42 18:06:22.761621 Running command ['ping']
+42 18:06:22.761863 Sending reply ('Still alive!', None)
+42 18:06:22.762010 Command Completed (socket: True)
+42 18:07:52.929033 Running command ['ping']
+42 18:07:52.936645 Sending reply ('Still alive!', None)
+42 18:07:52.936831 Command Completed (socket: True)
+42 18:08:52.983057 Running command ['ping']
+42 18:08:52.990494 Sending reply ('Still alive!', None)
+42 18:08:52.990674 Command Completed (socket: True)
+42 18:12:05.921749 Running command ['ping']
+42 18:12:05.929345 Sending reply ('Still alive!', None)
+42 18:12:05.929664 Command Completed (socket: True)
+42 18:13:26.003886 Running command ['ping']
+42 18:13:26.003952 Sending reply ('Still alive!', None)
+42 18:13:26.004060 Command Completed (socket: True)
+42 18:14:15.674641 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fc43a703b50> at idleFinish
+42 18:14:15.938094 Processing Client
+42 18:14:15.939880 Disconnecting Client (socket: True)
+42 18:14:15.958720 Parse cache invalidated
+42 18:14:15.958934 No timeout, exiting.
+42 18:14:16.059395 Exiting (socket: True)
+42 18:14:16.149637 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/opt/yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
