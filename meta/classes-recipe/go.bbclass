@@ -112,6 +112,8 @@ go_do_configure() {
 do_configure[dirs] =+ "${GOTMPDIR}"
 
 go_do_compile() {
+        set -xe
+        pwd
 	export TMPDIR="${GOTMPDIR}"
 	if [ -n "${GO_INSTALL}" ]; then
 		if [ -n "${GO_LINKSHARED}" ]; then
